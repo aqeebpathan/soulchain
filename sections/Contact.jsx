@@ -27,7 +27,7 @@ const Contact = () => {
               alt="right arrow"
               width={28}
               height={28}
-              className="transition-transform transform-gpu ease-in-out group-hover:translate-x-5"
+              className="transition-transform transform-gpu ease-in-out group-hover:translate-x-3 sm:group-hover:translate-x-5"
             />
           </a>
         </div>
