@@ -39,13 +39,14 @@ const Footer = () => {
                 <ul>
                   {contactLinks.map((item) => (
                     <li key={item.title} className="cursor-pointer">
-                      <LineAnimation styles={"mt-[10px] mb-[16px] "} />
+                      
                       <a
                         href={item.link}
                         className="text-[12px] tracking-[1px] font-[500] leading-[24px] text-[#e9efff]"
                       >
                         {item.title}
                       </a>
+                      <LineAnimation styles={"mt-[10px] mb-[16px] "} />
                     </li>
                   ))}
                 </ul>
@@ -58,13 +59,14 @@ const Footer = () => {
                 <ul>
                   {supportLinks.map((item) => (
                     <li key={item.title} className="cursor-pointer">
-                      <LineAnimation styles={"mt-[10px] mb-[16px] "} />
+                      
                       <a
                         href={item.link}
                         className="text-[12px] tracking-[1px] font-[500] leading-[24px] text-[#e9efff]"
                       >
                         {item.title}
                       </a>
+                      <LineAnimation styles={"mt-[10px] mb-[16px] "} />
                     </li>
                   ))}
                 </ul>
