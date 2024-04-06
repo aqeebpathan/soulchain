@@ -6,7 +6,7 @@ import RadioButtons from "@/components/RadioButtons";
 
 const SoulID = () => {
   return (
-    <section id="soul-id" className="sm:px-16 xs:px-8 px-6 lg:pt-[96px]">
+    <section id="soul-id" className="sm:px-16 xs:px-8 px-6 pt-[96px]">
       <div className="2xl:max-w-[1000px] w-full mx-auto">
         <LineAnimation />
         <div className="flex justify-between ">
@@ -39,7 +39,7 @@ const SoulID = () => {
         <LineAnimation />
         <LineAnimation />
 
-        <div className="flex flex-col lg:flex-row mt-[100px] mb-[100px]">
+        <div className="flex flex-col lg:flex-row mt-5 lg:mt-[100px] mb-[100px]">
           <div className="flex-1">
             <h1 className="text-3xl md:text-[64px] leading-none uppercase">
               Built for
@@ -108,7 +108,7 @@ const SoulID = () => {
                 </p>
               </div>
 
-              <div className="flex justify-center items-center gap-4 bg-[#6816b9] pt-[24px] pb-[24px] rounded-[64px] text-[12px] font-[400] leading-[24px] group cursor-pointer">
+              <div className="flex justify-center items-center gap-4 bg-[#6816b9] pt-[16px] pb-[16px] rounded-[64px] text-[12px] font-[400] leading-[24px] group cursor-pointer">
                 <p>Submit for Approval</p>
                 <Image
                   src="/right-arrow-white.svg"

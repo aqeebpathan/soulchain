@@ -1,5 +1,5 @@
 import LineAnimation from "@/components/LineAnimation";
-import { footerDescription, CONTACTS, SUPPORTS } from "@/constants";
+import { footerDescription, contactLinks, supportLinks } from "@/constants";
 
 const Footer = () => {
   return (
@@ -19,10 +19,10 @@ const Footer = () => {
               href="#"
               className="text-[14px] font-[600] leading-[16px] tracking-[1px] "
             >
-              🔗SoulChain
+              SoulChain
             </a>
             <p className="mt-[40px] text-[12px] font-[500] leading-[24px] text-[#e9efff]">
-              Copyright © 2023 SoulChain.
+              Developed By aqeeb.dev/
             </p>
             <p className="text-[12px] font-[400] leading-4 opacity-[.8] text-[#e9efff] sm:pr-10">
               DISCLAIMER: This website is a clone created for non-commercial
@@ -37,7 +37,7 @@ const Footer = () => {
                   Company:
                 </h2>
                 <ul>
-                  {CONTACTS.map((item) => (
+                  {contactLinks.map((item) => (
                     <li key={item.title} className="cursor-pointer">
                       <LineAnimation styles={"mt-[10px] mb-[16px] "} />
                       <a
@@ -56,7 +56,7 @@ const Footer = () => {
                   Supports:
                 </h2>
                 <ul>
-                  {SUPPORTS.map((item) => (
+                  {supportLinks.map((item) => (
                     <li key={item.title} className="cursor-pointer">
                       <LineAnimation styles={"mt-[10px] mb-[16px] "} />
                       <a

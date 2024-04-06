@@ -25,7 +25,7 @@ const Hero = () => {
         <p className="text-[10px] md:text-[12px] leading-5 md:leading-8 tracking-wider font-[400px] text-center max-w-[487px] mx-auto z-10 relative mt-[10px] lg:mt-[-200px] ">
           {heroSubheading}
         </p>
-        <div className="flex justify-center items-center mb-[200px] sm:mb-[100px] mt-5 lg:mb-[155px] lg:mt-8">
+        <div className="flex justify-center items-center mb-[104px] sm:mb-[100px] mt-5 lg:mb-[155px] lg:mt-8">
           <a
             className="flex justify-center items-center text-[12px] text-[#6816b9] bg-[#fff] w-fit py-[5px] px-[20px] sm:py-2 sm:px-8 rounded-[64px] font-[500] cursor-pointer group z-30"
             href="#"
@@ -36,7 +36,7 @@ const Hero = () => {
               alt="right arrow"
               width={28}
               height={28}
-              className="transition-transform transform-gpu ease-in-out group-hover:translate-x-5"
+              className="transition-transform transform-gpu ease-in-out group-hover:translate-x-3 sm:group-hover:translate-x-5"
             />
           </a>
         </div>

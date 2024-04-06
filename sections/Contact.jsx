@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Contact = () => {
   return (
-    <section id="contact" className="sm:px-16 pb-12 xs:px-8 px-6 lg:pt-[96px] ">
+    <section id="contact" className="sm:px-16 pb-12 xs:px-8 px-6 pt-[96px] ">
       <div className="2xl:max-w-[1000px] w-full mx-auto gradient-bg">
         <div className="text-3xl sm:text-[40px] md:text-7xl lg:text-8xl text-center uppercase leading-none pt-5 ">
           <h1>Secure Your</h1>

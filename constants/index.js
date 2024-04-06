@@ -43,12 +43,12 @@ export const footerDescription = [
   "consumers/investors.",
 ];
 
-export const CONTACTS = [
+export const contactLinks = [
   { title: "Career", href: "#" },
   { title: "Story", href: "#" },
 ];
 
-export const SUPPORTS = [
+export const supportLinks = [
   { title: "FAQs", href: "#" },
   { title: "Support Center", href: "#" },
   { title: "Help", href: "#" },

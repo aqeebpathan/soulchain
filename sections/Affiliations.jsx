@@ -8,7 +8,7 @@ const Affiliations = () => {
   return (
     <section
       id="proving-affiliations"
-      className="relative sm:px-16 pb-12 xs:px-8 px-6 lg:pt-[96px] z-40"
+      className="relative  sm:px-16 pb-12 xs:px-8 px-6 pt-[96px] z-40"
     >
       <div className="2xl:max-w-[1000px] w-full mx-auto">
         <LineAnimation />
