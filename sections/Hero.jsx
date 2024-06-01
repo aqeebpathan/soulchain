@@ -14,6 +14,7 @@ const Hero = () => {
           <h1 className="relative z-40">To Web3</h1>
           <h1 className="relative z-40"> Affiliations</h1>
           <Image
+            priority
             src="/spiral-curve.png"
             alt="spiral-curve"
             width={1080}
@@ -32,6 +33,7 @@ const Hero = () => {
           >
             <span className="mr-[8px]">Waitlist Application</span>
             <Image
+              priority
               src="/right-arrow-purple.svg"
               alt="right arrow"
               width={28}
