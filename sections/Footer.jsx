@@ -1,3 +1,4 @@
+import Link from "next/link";
 import LineAnimation from "@/components/LineAnimation";
 import { footerDescription, contactLinks, supportLinks } from "@/constants";
 
@@ -22,7 +23,7 @@ const Footer = () => {
               SoulChain
             </a>
             <p className="mt-[40px] text-[12px] font-[500] leading-[24px] text-[#e9efff]">
-              Developed By aqeeb.dev/
+              Developed By <Link href="https://aqeeb.dev">aqeeb.dev/</Link>
             </p>
             <p className="text-[12px] font-[400] leading-4 opacity-[.8] text-[#e9efff] sm:pr-10">
               DISCLAIMER: This website is a clone created for non-commercial
