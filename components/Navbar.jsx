@@ -41,7 +41,7 @@ const Navbar = () => {
     };
   }, []);
 
-  console.log(activeSection);
+  // console.log(activeSection);
   return (
     <nav className="sticky top-0 z-50 bg-transparent sm:px-16 px-6 nav-gradient">
       <div className="2xl:max-w-[1000px] mx-auto lg:text-sm relative">

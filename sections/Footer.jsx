@@ -27,8 +27,8 @@ const Footer = () => {
             </p>
             <p className="text-[12px] font-[400] leading-4 opacity-[.8] text-[#e9efff] sm:pr-10">
               DISCLAIMER: This website is a clone created for non-commercial
-              educational purposes only. We do not claim ownership of the
-              original content.
+              learning purposes only. We do not claim ownership of the original
+              content.
             </p>
           </div>
           <div className="flex-1">
@@ -40,7 +40,6 @@ const Footer = () => {
                 <ul>
                   {contactLinks.map((item) => (
                     <li key={item.title} className="cursor-pointer">
-                      
                       <a
                         href={item.link}
                         className="text-[12px] tracking-[1px] font-[500] leading-[24px] text-[#e9efff]"
@@ -60,7 +59,6 @@ const Footer = () => {
                 <ul>
                   {supportLinks.map((item) => (
                     <li key={item.title} className="cursor-pointer">
-                      
                       <a
                         href={item.link}
                         className="text-[12px] tracking-[1px] font-[500] leading-[24px] text-[#e9efff]"
