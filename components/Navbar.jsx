@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { navLinks } from "@/constants";
 
@@ -10,6 +10,38 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const [activeSection, setActiveSection] = useState("");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section"); // Get all sections
+      const scrollTop = window.scrollY || document.documentElement.scrollTop; // Get scroll position
+      let newActiveSection = "";
+
+      // Find the first visible section from the top
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        if (scrollTop >= sectionTop) {
+          newActiveSection = section.id;
+        }
+      });
+
+      setActiveSection(newActiveSection);
+    };
+
+    // Listen for scroll events
+    window.addEventListener("scroll", handleScroll);
+
+    // Initial update
+    handleScroll();
+
+    // Cleanup
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  console.log(activeSection);
   return (
     <nav className="sticky top-0 z-50 bg-transparent sm:px-16 px-6 nav-gradient">
       <div className="2xl:max-w-[1000px] mx-auto lg:text-sm relative">
@@ -22,7 +54,12 @@ const Navbar = () => {
 
           <ul className="hidden lg:flex items-center text-[12px] bg-[#e9efff] text-[#0d1729] rounded-3xl self-center overflow-hidden">
             {navLinks.map((link, index) => (
-              <li key={index} className="px-4 py-2 hover:bg-[#fff]">
+              <li
+                key={index}
+                className={`px-4 py-2 hover:bg-[#fff] ${
+                  link.href === "#" + activeSection ? "bg-[#fff]" : ""
+                }`}
+              >
                 <a href={link.href}>{link.label}</a>
               </li>
             ))}
