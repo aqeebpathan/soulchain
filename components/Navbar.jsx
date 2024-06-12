@@ -86,7 +86,7 @@ const Navbar = () => {
         </div>
 
         <div
-          className={`fixed top-0 right-0 z-20 bg-[#6816b9] w-full h-[100vh] lg:hidden transition-transform duration-300 ease-in-out transform ${
+          className={`fixed top-[0.5px] right-0 z-20 bg-[#6816b9] w-full h-[100vh] lg:hidden transition-transform duration-300 ease-in-out transform ${
             menuOpen ? "translate-y-0" : "-translate-y-full"
           }`}
           onClick={toggleMenu}
